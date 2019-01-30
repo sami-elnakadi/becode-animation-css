@@ -1,1 +1,2 @@
-/* No CSS *//*# sourceMappingURL=anime.min.css.map */
+@-webkit-keyframes roule{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}100%{-webkit-transform:translateX(800px) rotate(-30deg);transform:translateX(800px) rotate(-30deg)}}@keyframes roule{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}100%{-webkit-transform:translateX(800px) rotate(-30deg);transform:translateX(800px) rotate(-30deg)}}.s{background-image:url("/home/user/Bureau/learning-html-css/becode-animation-css/assets/img/moto.png");width:360px;height:200px}.s:hover{-webkit-animation:roule 1s;animation:roule 1s}
+/*# sourceMappingURL=anime.min.css.map */

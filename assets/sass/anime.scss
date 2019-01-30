@@ -1,0 +1,23 @@
+@keyframes roule{
+
+0%{
+    transform: translateX(0px);
+}
+
+100%{
+    transform: translateX(800px) rotate(-30deg);
+}
+}
+
+.s
+{
+   
+    background-image:url("/home/user/Bureau/learning-html-css/becode-animation-css/assets/img/moto.png");
+    width: 360px;
+    height: 200px;
+}
+
+.s:hover
+{
+    animation: roule 1s;
+}

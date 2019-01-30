@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,UAAU,CAAV,KAAU,GAEV,EAAE,GACE,SAAS,EAAE,eAAe;EAG9B,IAAI,GACA,SAAS,EAAE,iBAAiB,CAAC,cAAc;;AAI/C,AAAA,EAAE,CACF,EAEI,gBAAgB,EAAC,mFAAmF,EACpG,KAAK,EAAE,KAAK,EACZ,MAAM,EAAE,KAAK,GAChB;;AAED,AAAA,EAAE,AAAA,MAAM,CACR,EACI,SAAS,EAAE,QAAQ,GACtB",
     "sources": [
         "../sass/anime.scss"
     ],
