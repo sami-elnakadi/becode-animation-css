@@ -1,10 +1,24 @@
-@-webkit-keyframes roule { 0% { -webkit-transform: translateX(0px); transform: translateX(0px); }
-  100% { -webkit-transform: translateX(800px) rotate(-30deg); transform: translateX(800px) rotate(-30deg); } }
+/* Animation roule*/
+/*@keyframes roule{ 0%{ transform: translateX(0px); } 100%{ transform: translateX(1300px) rotate(-30deg); } } */
+/*Animation roule*/
+@-webkit-keyframes zoomin { 0% { -webkit-transform: scale(1); transform: scale(1); }
+  50% { -webkit-transform: scale(1.5); transform: scale(1.5); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
+@keyframes zoomin { 0% { -webkit-transform: scale(1); transform: scale(1); }
+  50% { -webkit-transform: scale(1.5); transform: scale(1.5); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
 
-@keyframes roule { 0% { -webkit-transform: translateX(0px); transform: translateX(0px); }
-  100% { -webkit-transform: translateX(800px) rotate(-30deg); transform: translateX(800px) rotate(-30deg); } }
+@-webkit-keyframes zoomout { 0% { -webkit-transform: scale(1); transform: scale(1); }
+  50% { -webkit-transform: scale(0.67); transform: scale(0.67); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
 
-.s { background-image: url("/home/user/Bureau/learning-html-css/becode-animation-css/assets/img/moto.png"); width: 360px; height: 200px; }
+@keyframes zoomout { 0% { -webkit-transform: scale(1); transform: scale(1); }
+  50% { -webkit-transform: scale(0.67); transform: scale(0.67); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
 
-.s:hover { -webkit-animation: roule 1s; animation: roule 1s; }
+.s { background-image: url("/home/user/Bureau/learning-html-css/becode-animation-css/assets/img/moto.png"); width: 300px; height: 200px; background-size: auto; }
+
+.s:hover { background-image: url("/home/user/Bureau/learning-html-css/becode-animation-css/assets/img/moto.png"); width: 300px; height: 200px; background-size: auto; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation: zoomin 10s ease-in infinite; animation: zoomin 10s ease-in infinite; -webkit-transition: all .5s ease-in-out; transition: all .5s ease-in-out; overflow: hidden; }
+
+.szoom:hover { -webkit-animation: zoomout 10s ease-in infinite; animation: zoomout 10s ease-in infinite; -webkit-transition: all .5s ease-in-out; transition: all .5s ease-in-out; overflow: hidden; }
 /*# sourceMappingURL=anime.css.map */

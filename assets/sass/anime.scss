@@ -1,23 +1,57 @@
-@keyframes roule{
+/* Animation roule*/
+
+/*@keyframes roule{
 
 0%{
     transform: translateX(0px);
 }
 
 100%{
-    transform: translateX(800px) rotate(-30deg);
+    transform: translateX(1300px) rotate(-30deg);
 }
+}
+*/
+
+/*Animation roule*/
+@keyframes zoomin {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+}
+
+@keyframes zoomout {
+    0% {transform: scale(1);}
+  50% {transform: scale(0.67);}
+  100% {transform: scale(1);}
 }
 
 .s
 {
    
     background-image:url("/home/user/Bureau/learning-html-css/becode-animation-css/assets/img/moto.png");
-    width: 360px;
+    width: 300px;
     height: 200px;
+    background-size: auto;
+  
+
 }
+
 
 .s:hover
 {
-    animation: roule 1s;
+  background-image:url("/home/user/Bureau/learning-html-css/becode-animation-css/assets/img/moto.png");
+    width: 300px;
+    height: 200px;
+    background-size: auto;
+  
+    animation-fill-mode: forwards;
+    animation: zoomin 10s ease-in infinite;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+}
+
+.szoom:hover{
+    animation: zoomout 10s ease-in infinite;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
 }
