@@ -1,0 +1,44 @@
+$color: white;
+$backgroundcolor:black;
+
+body{
+    background-color: $backgroundcolor;
+}
+
+.btn{
+    border: 5px solid $color; 
+    color:$color;
+    text-align: center;
+    background-color: $backgroundcolor;
+    width: 150px;
+    height: auto;
+    margin: 20% 40% 20% 40%;
+    transition: background-color 1s, color 1s;
+}
+
+.btn:hover{
+    background-color: $color;
+    color: $backgroundcolor;
+  /*  animation: mouv 3s;*/ // mouvement vers la droite
+  animation: zoom 3s; // zoom du boutton 
+}
+
+@keyframes mouv{
+    0%{
+        transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(50px);
+    }
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.5);
+    }
+}

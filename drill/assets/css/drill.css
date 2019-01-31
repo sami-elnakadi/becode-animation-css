@@ -1,0 +1,18 @@
+body { background-color: black; }
+
+.btn { border: 5px solid white; color: white; text-align: center; background-color: black; width: 150px; height: auto; margin: 20% 40% 20% 40%; -webkit-transition: background-color 1s, color 1s; transition: background-color 1s, color 1s; }
+
+.btn:hover { background-color: white; color: black; /*  animation: mouv 3s;*/ -webkit-animation: zoom 3s; animation: zoom 3s; }
+
+@-webkit-keyframes mouv { 0% { -webkit-transform: translateX(0px); transform: translateX(0px); }
+  100% { -webkit-transform: translateX(50px); transform: translateX(50px); } }
+
+@keyframes mouv { 0% { -webkit-transform: translateX(0px); transform: translateX(0px); }
+  100% { -webkit-transform: translateX(50px); transform: translateX(50px); } }
+
+@-webkit-keyframes zoom { 0% { -webkit-transform: scale(1); transform: scale(1); }
+  100% { -webkit-transform: scale(1.5); transform: scale(1.5); } }
+
+@keyframes zoom { 0% { -webkit-transform: scale(1); transform: scale(1); }
+  100% { -webkit-transform: scale(1.5); transform: scale(1.5); } }
+/*# sourceMappingURL=drill.css.map */
