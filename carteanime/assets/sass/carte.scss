@@ -1,10 +1,18 @@
 $colorR:red;
 $colorW: white;
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.content:hover .animImag{
+    animation: zoom 1s;
+    animation-timing-function: ease-in-out;
+}
 .content{
  width: 409px;
  height: 504;
 }
+
 
 .top{
     position: relative;
@@ -16,9 +24,9 @@ $colorW: white;
 .date{
     color:$colorW;
     background-color: $colorR;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px; 
+    border-radius: 100%;
+    width: 55px;
+    height: 55px; 
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -30,26 +38,69 @@ $colorW: white;
 .img{
     width: 400px;
     height: auto;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.content:hover .img{
+    opacity:0.8;
 }
 
 .legend{
-    position: absolute;
     display: flex;
     background-color: $colorR;
     color: white;
-    width: 63px;
+    width: 70px;
     height: 40px ;
    align-items: center;
 }
 
 .bottom{
+    background-color: white;
+}
 
+.content:hover .bottom{
+    animation: mouv 1s;
 }
 
 h2{
     color:$colorR;
 }
 
-p{
+.text{
+    color:white;
+    transition-property: color;
+    transition-duration: 1s;
+    padding-top: 20px;
+}
+
+.content:hover .text{
     color:grey;
+}
+
+.foot{
+    color:grey;
+}
+
+
+
+@keyframes mouv{
+    0%{
+        transform: translateY(0px);
+     
+    }
+    100%{
+        transform: translateY(-100px);
+      
+    }
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.045);
+    }
 }
